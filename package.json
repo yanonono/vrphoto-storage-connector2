@@ -1,0 +1,36 @@
+{
+  "name": "vrphoto-storage-connector2",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "dev:setup": "wrangler dev --config wrangler.setup.jsonc --port 8788",
+    "deploy": "wrangler deploy",
+    "deploy:setup": "wrangler deploy --config wrangler.setup.jsonc",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "hono": "^4.6.20"
+  },
+  "cloudflare": {
+    "bindings": {
+      "PHOTOS": {
+        "description": "VRPhoto Storage Connectorが画像を保存する利用者所有のR2 bucketです。"
+      },
+      "ALLOWED_ORIGIN": {
+        "description": "ブラウザからConnectorへアクセスできる写真管理サイトのOriginです。例: https://vrphoto.example.com"
+      }
+    }
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-plugin": "^1.1.1",
+    "@cloudflare/workers-types": "^5.20260828.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.2",
+    "vitest": "^4.1.11",
+    "wrangler": "^4.33.0"
+  }
+}

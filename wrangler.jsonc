@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "vrphoto-storage-connector2",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-08-28",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "observability": {
+    "enabled": true
+  },
+  "vars": {
+    "ALLOWED_ORIGIN": "https://vrphoto.example.com"
+  },
+  "r2_buckets": [
+    {
+      "binding": "PHOTOS",
+      "bucket_name": "vrphoto-storage-r2connector","preview_bucket_name": "vrphoto-storage-r2connector"
+    }
+  ]
+}
