@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       hono:
-        specifier: ^4.6.20
-        version: 4.13.5
+        specifier: ^4.13.11
+        version: 4.13.11
     devDependencies:
       '@cloudflare/vitest-plugin':
         specifier: ^1.1.1
@@ -640,8 +640,8 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
-  hono@4.13.5:
-    resolution: {integrity: sha512-O6+/eCYRkzzzy0rPWwKLiGBR1nFuUPZynnwjxN1MBA62NNqbT0wQEzQyK2gSO5yDIDB336sXQleAhOHrzlYyKw==}
+  hono@4.13.11:
+    resolution: {integrity: sha512-/SMX/RQNJn7oNmFwH6DtwDqcrzZU2otm1FD6OJe2cWF6cfy/F8hq0XVBv7xW3FTJshRQwuBnXHDq2kNsdZnshg==}
     engines: {node: '>=16.9.0'}
 
   kleur@4.1.5:
@@ -1369,7 +1369,7 @@ snapshots:
   fsevents@2.3.3:
     optional: true
 
-  hono@4.13.5: {}
+  hono@4.13.11: {}
 
   kleur@4.1.5: {}
 
